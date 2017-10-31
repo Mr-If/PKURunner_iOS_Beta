@@ -1,0 +1,76 @@
+//
+//  PrefixHeader.pch
+//  PKU
+//
+//  Created by ironfive on 16/8/9.
+//  Copyright © 2016年 ironfive. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "SVProgressHUD.h"
+#import "UIViewController+ViewControllerHUD.h"
+#import "AppDelegate.h"
+#import <MAMapKit/MAMapKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import "CoreData+MagicalRecord.h"
+#import "RunInfo+CoreDataClass.h"
+#import "RunInfo+CoreDataProperties.h"
+#import "LineInfo+CoreDataClass.h"
+#import "LineInfo+CoreDataProperties.h"
+#import "Http.h"
+#import "AFNetworking.h"
+#import "TKAlertCenter.h"
+#import "Colours.h"
+#import "UserInfoModel.h"
+#import "UIImage+CanvasImage.h"
+#import <AVFoundation/AVFoundation.h>
+#import "UserInfoModel.h"
+#import "WeatcherHttp.h"
+#import "UtilsHttp.h"
+#import "AuthHttp.h"
+#import "KeyboardManager.h"
+#import "JSONKit.h"
+#import "MD5Encode.h"
+#import "UIImage+ImageEffects.h"
+#import "UIViewController+BackButtonHandler.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+JDragon.h"
+#import "ImagePopView.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "UIScrollView+Tab.h"
+#define GAODE_MAP_KEY @"c2af3294d62a12f7e876dd5c48000bc3"
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define BASE_URL      @"http://162.105.205.61:10201/"
+
+#define INFO_KEY      @"key"
+#define INFO_VALUE    @"value"
+
+#define IPHONE6_WIDTH  375
+#define IPHONE6_HEIGHT 667
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define SCALE_WIDTH   SCREEN_WIDTH/IPHONE6_WIDTH
+#define SCALE_HEIGHT  SCREEN_HEIGHT/IPHONE6_HEIGHT
+
+#define CONTROL_WIDTH(w)  w*SCALE_WIDTH
+#define CONTROL_HEIGHT(h) h*SCALE_HEIGHT
+
+#import "Utility.h"
+
+// 日志输出
+#ifdef DEBUG
+#define Plog(...) NSLog(__VA_ARGS__)
+#else
+#define Plog(...)
+#endif
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define KAppDelegate ((AppDelegate*)[UIApplication sharedApplication].delegate)
+
+#endif /* PrefixHeader_pch */
