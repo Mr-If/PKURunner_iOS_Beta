@@ -1,8 +1,8 @@
 //
 //  Utility.h
-//  Join
+//  PKU
 //
-//  Created by 黄克瑾 on 16/11/28.
+//  Created by ironfive on 16/11/28.
 //  Copyright © 2016年 huangkejin. All rights reserved.
 //
 
